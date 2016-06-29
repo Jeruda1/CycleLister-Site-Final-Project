@@ -1,0 +1,591 @@
+/*
+Project Name: Final Project
+Client: Cyclists of LA
+Author: Jerusha Barnes
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+html {
+
+}
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/*/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;  note the padding around a left floated image 
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #043049;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family:'Muli';
+  font-weight: 300;
+  width:100%;
+}
+a {
+  text-decoration: none;
+}
+*/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#logo-banner img{
+  background-size:cover;
+  width:100%;
+  height:215px;
+}
+
+header {
+  background: #272822;
+  padding: 10px 0;
+  width:100%;
+  height:70px;
+}
+  /*when window page y-offset reaches certain height in the browser jquery triggers header to prevent from scrolling at fixed position*/
+.navfixed{
+  position:fixed;
+  top:0;
+  z-index:1;
+}
+header nav {
+  margin: 0 auto;
+  display:block;
+}
+header nav ul{
+  margin:0 auto;
+  display:block;
+  text-align:center;
+  width:70%;
+  margin-top: 7px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: .92em;
+}
+header nav ul li a {
+  color: #ffffff;
+  font-weight:600;
+}
+
+#search {
+  right:60px;
+  margin-top:-35px;
+  position:absolute;
+}
+#search img, #search form{
+  display:inline-block;
+  margin-right:5px;
+}
+#search img{
+  width:33px;
+}
+
+input[type=text] {
+  outline:none;
+  border-radius:5px;
+  border:1px solid gray;
+  padding:5px 8px;
+  text-align:center;
+  height:30px;
+  font-size:1rem;
+  float:right;
+}
+#search-input input[type=text]{
+  display:none;
+}
+header nav ul li a:hover{
+  color:#1ca4de;
+  border-bottom: solid #fef587 1px;
+}
+#slides1{
+  background-image: url(../images/bikemood2.jpg);
+}
+#slides2{
+  background-image: url(../images/bikeparty6.jpg);
+}
+#slides3{
+  background-image: url(../images/bikeshop2.jpg);
+}
+#slides1, #slides2, #slides3{
+  background-size:cover;
+  background-position:center;
+  height:400px;
+  margin:0 auto;
+}
+#slides1 h1 {
+  font-weight: 400;
+  font-size: 3.12rem;
+  margin-top: 5px;
+  padding-top:135px;
+  color:#ffffff;
+  text-align:center;
+}
+#slides2 h1{
+  text-align:center;
+  width:100%;
+  font-size:3rem;
+  font-weight:400;
+  padding-top:220px;
+  color:#fef587;
+}
+#slides2 hr{
+  width:65%;
+}
+#slides3 h1{
+  text-align:right;
+  width:95%;
+  font-size:3rem;
+  font-weight:400;
+  padding:5px 0 0 850px;
+  color:#fef587;
+}
+#slides1 p{
+  text-align:center;
+}
+/* Next & previous buttons */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #4d4d57;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #8191a8;
+}
+/* Fading animation for slideshow*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#mainmoods {
+  overflow:hidden;
+ margin:2% 7% 0 7%;
+
+}
+ #party {
+  background-image: url(../images/bikeparty2.jpg);
+  float:left;
+}
+#shy {
+  background-image: url(../images/shybike3.jpg);
+  float:right;
+}
+#party, #shy{
+  margin-top:40px;
+}
+#agro {
+  background-image: url(../images/bikeangry.jpg);
+  float:left;
+}
+#commuter {
+  background-image: url(../images/bikecommuter4.jpg);
+  float:right;
+}
+#moods div{
+  position:relative;
+  width: 45%;
+  height:400px;
+  background-size:cover;
+  background-position:center;
+  border-radius:10px;
+  margin-bottom:40px;
+}
+.btn {
+  border-radius: 15px;
+  font-weight: 800;
+  padding: 8px 0;
+  width: 230px;
+  font-size: 1.75rem;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color: #fef587;
+  opacity: 0.8;
+  filter: alpha(opacity=60); 
+  color:#272822;
+}
+.btn:hover{
+  color:#ffffff;
+  background: #1ca4de;
+}
+.bttm-info{
+  margin: 0 0 0 13%;
+}
+#box1, #box2, #box3 {
+  display:inline-block;
+  background-color: #1ca4de;
+  width:345px;
+  height:450px;
+  border-radius:10px;
+  padding-top:20px;
+  margin: 40px 10px 70px 0px;
+}
+#box2{
+  padding-top:18px;
+}
+#box3{
+  padding-top:15px;
+  height:500px;
+}
+#box3 #button{
+  margin-bottom:25px;
+}
+#box1 img, #box2 img, #box3 img{
+   border-radius:10px;
+   width:345px;
+   height:250px;
+   background-size:cover;
+   background-position:center;
+}
+#box2 p, #box3 p{
+   padding-bottom:4px;
+}
+
+h2{
+  margin:0 auto;
+  font-size:1.375rem;
+  font-weight:600;
+  text-align:center;
+  color:#ffffff;
+}
+
+hr{
+  border-top: 1px;
+  color:#ffffff;
+  width:80%;
+}
+
+.bttm-info p {
+  width:80%;
+  font-size:1.125rem;
+  text-align:center;
+  margin:0 auto;
+  color:#0e526f;
+  padding-bottom:10px;
+}
+
+#button {
+  border-radius: 15px;
+  font-weight: 600;
+  padding: 8px 0;
+  width: 150px;
+  font-size: 1.375rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid white;
+  color:#fef587;
+  margin-bottom:15px;
+}
+#button:hover{
+  color:#0e526f;
+  background: #ffffff;
+}
+#your-email{
+  font-weight: 600;
+  padding: 8px 0;
+  width: 170px;
+  font-size: 1.25rem;
+  text-align: center;
+  display: inline-block;
+  background-color: #d5c7;
+  color:#fef587;
+  margin-left:20px;
+  padding:5px;
+}
+#box2 form{
+  margin:0 auto;
+  display:block;
+  text-align:center;
+}
+input[type=email]{
+  padding: 8px 0;
+  width: 150px;
+  text-align:center;
+  font-size:16px;
+  border-radius:10px;
+  display: inline-block;
+  margin-bottom:15px;
+  border: 2px #fa8524;
+}
+input[type=submit]{
+  padding: 8px 0 8px 0;
+  width: 100px;
+  font-size: 1rem;
+  display: inline-block;
+   margin-bottom:15px;
+   border-radius:10px;
+   background-color: #fef587;
+   border: 2px #fa8524;
+  opacity: 0.8;
+  filter: alpha(opacity=60); 
+  color:#1ca4de;
+}
+input[type=submit]:hover{
+  border-radius: 15px;
+  border: 1px solid white;
+  color:#fef587;
+  background-color:#1ca4de;
+}
+#testimonial{
+  background-image: url(../images/testimonialpic.png);
+  background-size:cover;
+  background-position:center;
+  height:92px;
+  margin:0 auto;
+  margin-bottom:10px;
+  transition:all 3s;
+  overflow:hidden;
+}
+#testimonial.open{
+  height:380px;
+}
+a#testimonials {
+  margin-left:580px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #606161;
+}
+#testimonial i{
+  margin:15px 0 0 700px;
+  color: #606161;
+
+}
+
+#quote-boxes{
+  margin-left:340px;
+}
+.testimonial-quote{
+  display:inline-block;
+  background-color: black;
+  width:225px;
+  height:225px;
+  border-radius:10px;
+  padding-top:20px;
+  overflow:hidden;
+  margin: 45px 0 0 20px;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+  color:#ffffff;
+  float:left;
+}
+blockquote{
+  font-size:16px;
+  width:190px;
+  text-align:center;
+  margin:0 auto;
+  font-style:italic;
+  margin-bottom:10px;
+}
+.testimonial-quote p{
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  width:150px;
+  margin:0 auto;
+}
+/*#testimonial{
+ when window page y-offset reaches certain height in the browser jquery triggers #testimonial to appear or slide down
+}*/
+
+footer {
+  background: #272822;
+  padding: 25px 0 40px 0;
+  text-align: center;
+  width:100%;
+}
+#logo img {
+  width:15%;
+  margin: 0 auto;
+  margin-bottom:20px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+}
+.social img{ 
+  padding: 0 8px 0 8px;
+  height:30px;
+  text-align:center;
+  margin:0 auto;
+}
+footer ul{
+  float:left;
+}
+.footer-info{
+  text-align:center;
+  color:#ffffff;
+}
+.footer-info h3{
+  font-size:20px;
+  font-weight:500;
+}
+.footer-info p{
+  font-size:14px;
+}
+.copyright {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  float:right;
+  margin-right:20px;
+}
+
+/*set for small media query size*/
+
+@media (max-width:768px){
+  #logo-banner img{
+    background-size:cover;
+    width:768px;
+    height:145px;
+  }
+
+  header {
+    width:100%;
+    height:70px;
+  }
+  header nav ul{ 
+    width:100%;
+    float:left;
+  }
+  header nav ul li {
+    font-size: .7em;;
+    margin: 0 0 0 20px;
+  }
+  #search {
+    right:1px;
+    margin-left:20px;
+    margin-top:-35px;
+  }
+  #search img{
+    width:25px;
+    margin-top:50px;
+  }
+  input[type=text] {
+    width:50px;
+    padding:2px 3px;
+    height:20px;
+    font-size:.75rem;
+  }
+  #slides1, #slides2, #slides3{
+    height:330px;
+    width:768px;
+    margin-top:10px;
+  }
+  #slides1 h1{
+    font-size:3rem;
+    padding-top:90px;
+  }
+  #slides2 h1{
+    font-size:2.5rem;
+  }
+  #slides3 h1{
+    width:100%;
+    font-size:2.5rem;
+    padding-left:500px;
+  }
+
+  #moods div{
+    width: 45%;
+    height:260px;
+  }
+  .btn {
+    width:195px;
+    padding:4px 0;
+  }
+  .bttm-info{
+    margin: 0 0 0 28%;
+  }
+  #testimonial{
+    height:88px;
+    margin:0 auto;
+    margin-bottom:10px;
+  }
+  #testimonial.open{
+    height:350px;
+  }
+  a#testimonials {
+    margin-left:290px;
+  }
+  #testimonial i{
+    margin:15px 0 0 365px;
+  }
+  #quote-boxes{
+    margin-left:40px;
+  }
+  .testimonial-quote{
+    width:205px;
+    height:205px;
+    margin: 45px 0 0 15px;
+  }
+}
+
+
+
+
+
