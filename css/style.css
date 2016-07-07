@@ -259,7 +259,7 @@ header nav ul li a:hover{
   font-size: 1.75rem;
   text-align: center;
   display: inline-block;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   position:absolute;
   top:50%;
   left:50%;
@@ -564,17 +564,20 @@ and (max-device-width : 1024px){
     width:190px;
     padding:4px 0;
     font-size: 1.5rem;
-    right:50%;
+    left:50%;
   }
   .bttm-info{
-    /*margin: 0 0 0 30%;*/
+    margin-left:10%;
   }
   #box1, #box2, #box3, #box1 img, #box2 img, #box3 img{
-    width:300px;
+    width:275px;
+  }
+  #box1, #box2, #box3, #box1{
+    margin-left:2px;
   }
   #testimonial{
     height:88px;
-    margin:0 auto;
+    /*margin:0 auto;*/
     margin-bottom:10px;
   }
   #testimonial.open{
