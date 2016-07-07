@@ -564,13 +564,13 @@ and (max-device-width : 1024px){
     width:190px;
     padding:4px 0;
     font-size: 1.5rem;
-    margin-right:20px;
+    right:50%;
   }
   .bttm-info{
     /*margin: 0 0 0 30%;*/
   }
   #box1, #box2, #box3, #box1 img, #box2 img, #box3 img{
-    width:320px;
+    width:300px;
   }
   #testimonial{
     height:88px;
@@ -581,13 +581,13 @@ and (max-device-width : 1024px){
     height:350px;
   }
   a#testimonials {
-    margin-left:290px;
+    margin-left:310px;
   }
   #testimonial i{
-    margin:15px 0 0 365px;
+    margin:15px 0 0 385px;
   }
   #quote-boxes{
-    margin-left:80px;
+    margin-left:100px;
   }
   .testimonial-quote{
     width:205px;
