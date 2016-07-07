@@ -561,12 +561,16 @@ and (max-device-width : 1024px){
     height:260px;
   }
   .btn {
-    width:195px;
+    width:190px;
     padding:4px 0;
-    margin:0 auto;
+    font-size: 1.5rem;
+    margin-right:20px;
   }
   .bttm-info{
-    margin: 0 0 0 30%;
+    /*margin: 0 0 0 30%;*/
+  }
+  #box1, #box2, #box3, #box1 img, #box2 img, #box3 img{
+    width:320px;
   }
   #testimonial{
     height:88px;
@@ -583,7 +587,7 @@ and (max-device-width : 1024px){
     margin:15px 0 0 365px;
   }
   #quote-boxes{
-    margin-left:60px;
+    margin-left:80px;
   }
   .testimonial-quote{
     width:205px;
