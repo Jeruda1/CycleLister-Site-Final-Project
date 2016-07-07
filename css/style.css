@@ -565,6 +565,7 @@ and (max-device-width : 1024px){
     padding:4px 0;
     font-size: 1.5rem;
     left:50%;
+    transform: translate(-50%, -50%);
   }
   .bttm-info{
     margin-left:10%;
@@ -574,7 +575,15 @@ and (max-device-width : 1024px){
   }
   #box1, #box2, #box3, #box1{
     margin-left:2px;
+    margin-bottom:40px;
   }
+  #box2{
+  padding-top:18px;
+}
+#box3{
+  padding-top:15px;
+  height:500px;
+}
   #testimonial{
     height:88px;
     /*margin:0 auto;*/
