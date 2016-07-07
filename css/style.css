@@ -496,9 +496,12 @@ footer ul{
   margin-right:20px;
 }
 
-/*set for small media query size*/
+/*set for ipad media query size*/
 
-@media (max-width:768px){
+/*@media (max-width:768px)*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
   #logo-banner img{
     background-size:cover;
     width:768px;
