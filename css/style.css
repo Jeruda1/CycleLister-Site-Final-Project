@@ -573,7 +573,7 @@ and (max-device-width : 1024px){
   #box1, #box2, #box3, #box1 img, #box2 img, #box3 img{
     width:275px;
   }
-  #box1, #box2, #box3, #box1{
+  #box1, #box2, #box3{
     margin-left:2px;
     margin-bottom:90px;
   }
