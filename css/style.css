@@ -557,7 +557,7 @@ and (max-device-width : 1024px){
   }
 
   #moods div{
-    width: 50%;
+    width: 45%;
     height:260px;
   }
   .btn {
