@@ -568,7 +568,7 @@ and (max-device-width : 1024px){
     /*transform: translate(-50%, -50%);*/
   }
   .bttm-info{
-    margin-left:10%;
+    margin-left:5%;
   }
   #box1, #box2, #box3, #box1 img, #box2 img, #box3 img{
     width:275px;
@@ -578,7 +578,7 @@ and (max-device-width : 1024px){
     margin-bottom:90px;
   }
   #box1{
-    padding-bottom:20px;
+    padding-bottom:40px;
   }
   #box2, #box3{
   /*padding-top:5px;*/
