@@ -557,7 +557,7 @@ and (max-device-width : 1024px){
   }
 
   #moods div{
-    width: 45%;
+    width: 50%;
     height:260px;
   }
   .btn {
@@ -578,10 +578,10 @@ and (max-device-width : 1024px){
     margin-bottom:40px;
   }
   #box2{
-  padding-top:10px;
+  padding-top:5px;
 }
 #box3{
-  padding-top:7px;
+  padding-top:3px;
   /*height:500px;*/
 }
   #testimonial{
