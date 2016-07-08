@@ -578,8 +578,8 @@ and (max-device-width : 1024px){
     margin-bottom:90px;
   }
   #box1{
-    padding-bottom:80px;
-    margin-bottom:50px;
+    padding-bottom:100px;
+    /*margin-bottom:50px;*/
   }
   #box2, #box3{
   /*padding-top:5px;*/
