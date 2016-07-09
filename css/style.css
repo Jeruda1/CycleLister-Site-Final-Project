@@ -563,9 +563,9 @@ and (max-device-width : 1024px){
     width:190px;
     padding:4px 0;
     font-size: 1.5rem;
-    right:50%;
+    /*right:50%;*/
     position:absolute;
-    /*transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
   }
   .bttm-info{
     margin-left:5%;
