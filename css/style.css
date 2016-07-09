@@ -564,7 +564,7 @@ and (max-device-width : 1024px){
     padding:4px 0;
     font-size: 1.5rem;
     right:50%;
-    position:relative;
+    position:absolute;
     /*transform: translate(-50%, -50%);*/
   }
   .bttm-info{
@@ -587,6 +587,9 @@ and (max-device-width : 1024px){
 }
 #box1 img{
   height:230px;
+}
+#box2 img{
+  height:255px;
 }
 /*#box3{
   padding-top:3px;
